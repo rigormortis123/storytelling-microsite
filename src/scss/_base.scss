@@ -11,4 +11,15 @@ a {
 img,
 video {
   display: block;
+  width: 100%;
+}
+
+h1 {
+  font-family: "reload alt";
+  position: absolute;
+  width: 100%;
+  margin-top: 80px;
+  font-size: 132;
+  text-align: center;
+  text-transform: uppercase;
 }

@@ -1,0 +1,34 @@
+#first-background,
+#first-foreground {
+  position: absolute;
+}
+
+#first-background {
+  top: 0;
+}
+
+#first-foreground {
+  bottom: 0;
+}
+
+#first-foreground,
+#first-foreground-cover {
+  transform: translateY(250px);
+}
+
+#first-background {
+  transform: translateY(220px);
+}
+
+#first-foreground-cover {
+  height: 300px;
+  background-color: black;
+}
+
+#first-bubble-one {
+  width: 300px;
+}
+
+#first-bubble-two {
+  width: 320px;
+}
