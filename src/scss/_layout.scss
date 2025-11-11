@@ -4,16 +4,27 @@
 }
 
 .l-speech-overlay {
+  z-index: 1;
   position: fixed;
   display: flex;
   width: 100%;
   top: 310;
-  padding: 0 170px;
-  justify-content: space-between;
+  gap: 450px;
+  justify-content: center;
   align-items: flex-end;
 }
 
 .l-speech-overlay img {
   opacity: 0;
+  height: fit-content;
+}
+
+.l-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-center img {
   height: fit-content;
 }

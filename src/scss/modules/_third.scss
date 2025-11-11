@@ -1,0 +1,18 @@
+#third {
+  height: 1000px;
+  position: relative;
+  background-color: black;
+}
+
+#third img {
+  width: 370px;
+}
+
+#third .l-center {
+  gap: 200px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+}

@@ -1,0 +1,23 @@
+#fifth {
+  position: relative;
+}
+
+#fifth-left {
+  width: 560px;
+}
+
+#fifth-right {
+  width: 270px;
+}
+
+#fifth .l-center {
+  gap: 120px;
+}
+
+#fifth-bubble {
+  opacity: 0;
+  top: 380;
+  right: 380;
+  position: fixed;
+  width: 430px;
+}
