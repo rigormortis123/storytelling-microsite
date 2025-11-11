@@ -1,35 +1,35 @@
 @font-face {
   font-family: "Reload Alt";
-  src: url("../font/ReloadAlt-Regular.woff2") format("woff2"),
-    url("../font/ReloadAlt-Regular.woff") format("woff");
+  src: url("../fonts/ReloadAlt-Regular.woff2") format("woff2"),
+    url("../fonts/ReloadAlt-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: regular;
+  font-style: normal;
   font-display: fallback;
 }
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("../font/SFProText-Regular.woff2") format("woff2"),
-    url("../font/SFProText-Regular.woff") format("woff");
+  src: url("../fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../fonts/SFProText-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: regular;
+  font-style: normal;
   font-display: fallback;
 }
 
 @font-face {
   font-family: "SF Rounded";
-  src: url("../font/SFRounded-Medium.woff2") format("woff2"),
-    url("../font/SFRounded-Medium.woff") format("woff");
+  src: url("../fonts/SFRounded-Medium.woff2") format("woff2"),
+    url("../fonts/SFRounded-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-display: fallback;
 }
 
 @font-face {
   font-family: "SF Rounded";
-  src: url("../font/SFRounded-Semibold.woff2") format("woff2"),
-    url("../font/SFRounded-Semibold.woff") format("woff");
+  src: url("../fonts/SFRounded-Semibold.woff2") format("woff2"),
+    url("../fonts/SFRounded-Semibold.woff") format("woff");
   font-weight: 600;
-  font-style: semibold;
+  font-style: normal;
   font-display: fallback;
 }
