@@ -1,9 +1,10 @@
 .button {
-  margin: 17px;
+  padding: 17px;
   text-align: center;
   border-radius: 7px;
   width: 500px;
 }
+
 .button.light-bg {
   color: black;
   background-color: white;
@@ -12,7 +13,6 @@
 
 .button.dark-bg {
   color: white;
-
   background-color: black;
   border: 2px solid white;
 }
