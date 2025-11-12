@@ -1,3 +1,14 @@
+#sixth {
+  z-index: 1;
+  height: 3000px;
+  margin-top: -1300px;
+}
+
+#sixth img {
+  opacity: 0;
+  transform: translateY(200px);
+}
+
 #sixth-left {
   width: 560px;
 }

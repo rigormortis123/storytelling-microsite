@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 var first = gsap.timeline({
   scrollTrigger: {
     trigger: "#first",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -62,7 +62,7 @@ first.to(
     opacity: 1,
     duration: 0.1,
   },
-  0.04
+  0.02
 );
 
 first.to(
@@ -71,7 +71,7 @@ first.to(
     opacity: 0,
     duration: 0.1,
   },
-  0.32
+  0.4
 );
 
 first.to(
@@ -80,7 +80,7 @@ first.to(
     opacity: 1,
     duration: 0.1,
   },
-  0.22
+  0.2
 );
 
 first.to(
@@ -89,13 +89,13 @@ first.to(
     opacity: 0,
     duration: 0.1,
   },
-  0.32
+  0.4
 );
 
 var second = gsap.timeline({
   scrollTrigger: {
     trigger: "#second",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -104,23 +104,20 @@ var second = gsap.timeline({
 second.to("#second img", {
   y: 0,
   opacity: 1,
-  duration: 0.02,
+  duration: 0.1,
 });
 
-second.to(
-  "#second img",
-  {
-    y: -200,
-    opacity: 0,
-    duration: 0.02,
-  },
-  0.04
-);
+second.to("#second img", {
+  y: -200,
+  opacity: 0,
+  duration: 0.1,
+}),
+  0.5;
 
 var third = gsap.timeline({
   scrollTrigger: {
     trigger: "#third",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -129,7 +126,7 @@ var third = gsap.timeline({
 third.to("#third-left-one", {
   y: 0,
   opacity: 1,
-  duration: 0.1,
+  duration: 0.08,
 });
 
 third.to(
@@ -137,9 +134,9 @@ third.to(
   {
     y: 0,
     opacity: 1,
-    duration: 0.1,
+    duration: 0.08,
   },
-  0.16
+  0.15
 );
 
 third.to(
@@ -147,9 +144,9 @@ third.to(
   {
     y: 0,
     opacity: 1,
-    duration: 0.1,
+    duration: 0.08,
   },
-  0.32
+  0.3
 );
 
 third.to(
@@ -157,9 +154,9 @@ third.to(
   {
     y: 0,
     opacity: 1,
-    duration: 0.1,
+    duration: 0.08,
   },
-  0.48
+  0.45
 );
 
 third.to(
@@ -201,7 +198,7 @@ third.to(
 var fourth = gsap.timeline({
   scrollTrigger: {
     trigger: "#fourth",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -214,7 +211,7 @@ fourth.to("#fourth-background", {
 var fifth = gsap.timeline({
   scrollTrigger: {
     trigger: "#fifth",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -223,7 +220,7 @@ var fifth = gsap.timeline({
 fifth.to("#fifth-panel", {
   y: 0,
   opacity: 1,
-  duration: 0.05,
+  duration: 0.2,
 });
 
 fifth.to(
@@ -231,7 +228,118 @@ fifth.to(
   {
     y: -200,
     opacity: 0,
-    duration: 0.05,
+    duration: 0.2,
   },
-  0.1
+  0.4
 );
+
+var sixth = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#sixth",
+    markers: false,
+    pin: true,
+    scrub: 2,
+  },
+});
+
+sixth.to("#sixth-left", {
+  y: 0,
+  opacity: 1,
+  duration: 0.13,
+});
+
+sixth.to(
+  "#sixth-right",
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.13,
+  },
+  0.2
+);
+
+sixth.to(
+  "#sixth-bubble",
+  {
+    opacity: 1,
+    duration: 0.13,
+  },
+  0.4
+);
+
+sixth.to(
+  "#sixth-left",
+  {
+    y: -900,
+    duration: 0.3,
+  },
+  0.6
+);
+
+sixth.to(
+  "#sixth-right",
+  {
+    y: -1000,
+    duration: 0.3,
+  },
+  0.6
+);
+
+sixth.to(
+  "#sixth-bubble",
+  {
+    y: -250,
+    duration: 0.3,
+  },
+  0.6
+);
+
+sixth.to(
+  "#sixth-bubble",
+  {
+    opacity: 0,
+    duration: 0.13,
+  },
+  0.8
+);
+
+var seventh = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#seventh",
+    markers: true,
+    pin: true,
+    scrub: 2,
+  },
+});
+
+seventh.to("#seventh img", {
+  y: 0,
+  scale: 1,
+  duration: 0.3,
+});
+
+seventh.to(
+  "#seventh img",
+  {
+    y: -1000,
+  },
+  0.6
+);
+
+seventh.to(
+  "#footer-h1",
+  {
+    opacity: 1,
+    duration: 0.13,
+  },
+  0.4
+);
+
+var footer = gsap.timeline({
+  scrollTrigger: {
+    trigger: "footer",
+    markers: true,
+    pin: true,
+    scrub: 2,
+  },
+});
