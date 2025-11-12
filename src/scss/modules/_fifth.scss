@@ -1,23 +1,10 @@
 #fifth {
   position: relative;
+  margin-top: -3500px;
 }
 
-#fifth-left {
-  width: 560px;
-}
-
-#fifth-right {
-  width: 270px;
-}
-
-#fifth .l-center {
-  gap: 120px;
-}
-
-#fifth-bubble {
+#fifth-panel {
+  transform: translateY(200px);
   opacity: 0;
-  top: 380;
-  right: 380;
-  position: fixed;
-  width: 430px;
+  width: 950px;
 }

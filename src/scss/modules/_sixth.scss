@@ -1,5 +1,19 @@
-#sixth img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1150px;
+#sixth-left {
+  width: 560px;
+}
+
+#sixth-right {
+  width: 270px;
+}
+
+#sixth .l-center {
+  gap: 120px;
+}
+
+#sixth-bubble {
+  opacity: 0;
+  top: 380;
+  right: 380;
+  position: fixed;
+  width: 430px;
 }

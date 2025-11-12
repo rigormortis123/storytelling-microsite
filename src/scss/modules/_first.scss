@@ -1,3 +1,12 @@
+#first {
+  height: 1600px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(0, 0, 0, 1) 35%
+  );
+}
+
 #first-background,
 #first-foreground {
   position: absolute;
@@ -11,9 +20,12 @@
   bottom: 0;
 }
 
-#first-foreground,
-#first-foreground-cover {
+#first-foreground {
   transform: translateY(300px);
+}
+
+#first-foreground-cover {
+  transform: translateY(298px);
 }
 
 #first-background {
@@ -21,14 +33,16 @@
 }
 
 #first-foreground-cover {
-  height: 300px;
+  height: 1000px;
   background-color: black;
 }
 
 #first-bubble-one {
   width: 300px;
+  z-index: 1;
 }
 
 #first-bubble-two {
   width: 320px;
+  z-index: 1;
 }

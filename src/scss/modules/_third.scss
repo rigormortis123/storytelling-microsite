@@ -1,14 +1,17 @@
 #third {
-  height: 1000px;
+  margin-top: -1200px;
+  height: 5000px;
   position: relative;
-  background-color: black;
 }
 
 #third img {
   width: 370px;
+  opacity: 0;
+  transform: translateY(200px);
 }
 
 #third .l-center {
+  z-index: 1;
   gap: 200px;
   width: 100%;
   display: flex;

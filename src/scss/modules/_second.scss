@@ -1,9 +1,11 @@
 #second img {
   width: 950px;
   opacity: 0;
+  transform: translateY(200px);
 }
 
 #second {
-  background-color: black;
+  height: 1400px;
+  margin-top: -1700px;
   position: relative;
 }

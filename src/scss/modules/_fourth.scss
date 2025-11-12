@@ -1,3 +1,8 @@
-#fourth-panel {
-  width: 950px;
+#fourth {
+  margin-top: -7000px;
+}
+
+#fourth-background {
+  z-index: -1;
+  transform: translatey(1000px);
 }

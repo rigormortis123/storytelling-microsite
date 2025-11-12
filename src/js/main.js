@@ -12,13 +12,13 @@ var first = gsap.timeline({
 });
 
 first.to("#first-foreground", {
-  y: "-400px",
+  y: -1000,
 });
 
 first.to(
   "#first-foreground-cover",
   {
-    y: "-400px",
+    y: -1002,
   },
   0
 );
@@ -26,9 +26,17 @@ first.to(
 first.to(
   "#first-background",
   {
-    y: "-200px",
+    y: -400,
   },
   0
+);
+
+first.to(
+  "#first-background",
+  {
+    opacity: 0,
+  },
+  0.1
 );
 
 first.to(
@@ -40,12 +48,21 @@ first.to(
 );
 
 first.to(
+  "#first-h1",
+  {
+    opacity: 0,
+    duration: 0.05,
+  },
+  0.1
+);
+
+first.to(
   "#first-bubble-one",
   {
     opacity: 1,
     duration: 0.1,
   },
-  0.02
+  0.04
 );
 
 first.to(
@@ -63,7 +80,7 @@ first.to(
     opacity: 1,
     duration: 0.1,
   },
-  0.16
+  0.22
 );
 
 first.to(
@@ -84,67 +101,137 @@ var second = gsap.timeline({
   },
 });
 
+second.to("#second img", {
+  y: 0,
+  opacity: 1,
+  duration: 0.02,
+});
+
 second.to(
   "#second img",
   {
-    y: -0,
-    opacity: 1,
-    duration: 0.05,
-  },
-  0
-);
-
-flotte.to(
-  ".appear",
-  {
     y: -200,
     opacity: 0,
-    duration: 0.05,
+    duration: 0.02,
   },
-  0.15
+  0.04
 );
 
-var multiple = gsap.timeline({
+var third = gsap.timeline({
   scrollTrigger: {
-    trigger: ".container-4",
+    trigger: "#third",
     markers: true,
     pin: true,
     scrub: 2,
   },
 });
 
-multiple.to(".appear-first-left", {
-  y: -200,
+third.to("#third-left-one", {
+  y: 0,
   opacity: 1,
-  duration: 0.02,
+  duration: 0.1,
 });
 
-multiple.to(
-  ".appear-first-right",
+third.to(
+  "#third-right-one",
   {
-    y: -200,
+    y: 0,
     opacity: 1,
-    duration: 0.02,
+    duration: 0.1,
   },
-  0.02
+  0.16
 );
 
-multiple.to(
-  ".appear-second-left",
+third.to(
+  "#third-left-two",
   {
-    y: -200,
+    y: 0,
     opacity: 1,
-    duration: 0.02,
+    duration: 0.1,
   },
-  0.04
+  0.32
 );
 
-multiple.to(
-  ".appear-second-right",
+third.to(
+  "#third-right-two",
+  {
+    y: 0,
+    opacity: 1,
+    duration: 0.1,
+  },
+  0.48
+);
+
+third.to(
+  "#third-right-one",
+  {
+    y: -1000,
+    opacity: 1,
+  },
+  0.6
+);
+
+third.to(
+  "#third-right-two",
+  {
+    y: -1000,
+    opacity: 1,
+  },
+  0.6
+);
+
+third.to(
+  "#third-left-one",
+  {
+    y: -800,
+    opacity: 1,
+  },
+  0.6
+);
+
+third.to(
+  "#third-left-two",
+  {
+    y: -800,
+    opacity: 1,
+  },
+  0.6
+);
+
+var fourth = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#fourth",
+    markers: true,
+    pin: true,
+    scrub: 2,
+  },
+});
+
+fourth.to("#fourth-background", {
+  y: -2000,
+});
+
+var fifth = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#fifth",
+    markers: true,
+    pin: true,
+    scrub: 2,
+  },
+});
+
+fifth.to("#fifth-panel", {
+  y: 0,
+  opacity: 1,
+  duration: 0.05,
+});
+
+fifth.to(
+  "#fifth-panel",
   {
     y: -200,
-    opacity: 1,
-    duration: 0.02,
+    opacity: 0,
+    duration: 0.05,
   },
-  0.06
+  0.1
 );
