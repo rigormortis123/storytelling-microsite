@@ -2,6 +2,7 @@
   margin-top: -1200px;
   height: 5000px;
   position: relative;
+  z-index: 1;
 }
 
 #third img {
@@ -11,7 +12,6 @@
 }
 
 #third .l-center {
-  z-index: 1;
   gap: 200px;
   width: 100%;
   display: flex;

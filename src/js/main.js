@@ -183,7 +183,7 @@ third.to(
 third.to(
   "#third-left-one",
   {
-    y: -800,
+    y: -900,
     opacity: 1,
   },
   0.6
@@ -192,7 +192,7 @@ third.to(
 third.to(
   "#third-left-two",
   {
-    y: -800,
+    y: -900,
     opacity: 1,
   },
   0.6
