@@ -19,7 +19,7 @@ h1 {
   position: absolute;
   width: 100%;
   margin-top: 80px;
-  font-size: 132;
+  font-size: 132px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -28,4 +28,10 @@ p {
   font-family: "sf pro text", "segoe", sans-serif;
   font-size: 20px;
   line-height: 119%;
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    font-size: 172px;
+  }
 }

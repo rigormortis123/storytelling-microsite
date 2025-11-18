@@ -19,3 +19,9 @@
   top: 0;
   justify-content: center;
 }
+
+@media all and (min-width: 1600px) {
+  #third img {
+    width: 470px;
+  }
+}
