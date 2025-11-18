@@ -13,27 +13,18 @@
 }
 
 #first-background {
+  transform: translateY(220px);
   top: 0;
 }
 
 #first-foreground {
-  bottom: 0;
-}
-
-#first-foreground {
   transform: translateY(300px);
+  bottom: 0;
 }
 
 #first-foreground-cover {
   transform: translateY(298px);
-}
-
-#first-background {
-  transform: translateY(220px);
-}
-
-#first-foreground-cover {
-  height: 1000px;
+  height: 2000px;
   background-color: black;
 }
 

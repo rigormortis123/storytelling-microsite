@@ -12,13 +12,13 @@ var first = gsap.timeline({
 });
 
 first.to("#first-foreground", {
-  y: -1000,
+  y: -1200,
 });
 
 first.to(
   "#first-foreground-cover",
   {
-    y: -1002,
+    y: -1202,
   },
   0
 );
@@ -26,17 +26,9 @@ first.to(
 first.to(
   "#first-background",
   {
-    y: -400,
+    y: -600,
   },
   0
-);
-
-first.to(
-  "#first-background",
-  {
-    opacity: 0,
-  },
-  0.1
 );
 
 first.to(
@@ -53,7 +45,16 @@ first.to(
     opacity: 0,
     duration: 0.05,
   },
-  0.1
+  0.2
+);
+
+first.to(
+  "#first-background",
+  {
+    opacity: 0,
+    duration: 0.1,
+  },
+  0.3
 );
 
 first.to(
@@ -162,7 +163,7 @@ third.to(
 third.to(
   "#third-right-one",
   {
-    y: -1000,
+    y: -1100,
     opacity: 1,
   },
   0.6
@@ -171,7 +172,7 @@ third.to(
 third.to(
   "#third-right-two",
   {
-    y: -1000,
+    y: -1100,
     opacity: 1,
   },
   0.6
@@ -180,7 +181,7 @@ third.to(
 third.to(
   "#third-left-one",
   {
-    y: -900,
+    y: -1000,
     opacity: 1,
   },
   0.6
@@ -189,7 +190,7 @@ third.to(
 third.to(
   "#third-left-two",
   {
-    y: -900,
+    y: -1000,
     opacity: 1,
   },
   0.6
@@ -205,7 +206,7 @@ var fourth = gsap.timeline({
 });
 
 fourth.to("#fourth-background", {
-  y: -2000,
+  y: -2500,
 });
 
 var fifth = gsap.timeline({
@@ -230,7 +231,7 @@ fifth.to(
     opacity: 0,
     duration: 0.2,
   },
-  0.4
+  0.5
 );
 
 var sixth = gsap.timeline({
@@ -306,7 +307,7 @@ sixth.to(
 var seventh = gsap.timeline({
   scrollTrigger: {
     trigger: "#seventh",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
@@ -338,8 +339,13 @@ seventh.to(
 var footer = gsap.timeline({
   scrollTrigger: {
     trigger: "footer",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
+});
+
+footer.to(".footer-wrapper", {
+  y: 0,
+  duration: 0.2,
 });

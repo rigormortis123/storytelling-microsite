@@ -1,10 +1,15 @@
 footer {
-  margin-top: -3500px;
+  height: 2000px;
+  margin-top: -4200px;
+  position: relative;
+}
+
+.footer-wrapper {
   display: flex;
   align-items: center;
   height: 100vh;
-  background-color: white;
-  position: relative;
+  transform: translateY(1400px);
+  background-color: black;
 }
 
 footer .l-center {
@@ -14,7 +19,6 @@ footer .l-center {
   height: fit-content;
   display: flex;
   align-items: stretch;
-  background-color: white;
   gap: 120px;
   width: 1150px;
 }
