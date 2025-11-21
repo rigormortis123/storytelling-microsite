@@ -81,7 +81,7 @@ first.to(
     opacity: 0,
     duration: 0.1,
   },
-  0.4
+  0.37
 );
 
 first.to(
@@ -99,7 +99,7 @@ first.to(
     opacity: 0,
     duration: 0.1,
   },
-  0.4
+  0.37
 );
 
 var second = gsap.timeline({
@@ -208,15 +208,24 @@ third.to(
 var fourth = gsap.timeline({
   scrollTrigger: {
     trigger: "#fourth",
-    markers: false,
+    markers: true,
     pin: true,
     scrub: 2,
   },
 });
 
 fourth.to("#fourth-background", {
-  y: -2500,
+  y: "-1800px",
 });
+
+fourth.to(
+  "#fourth-background",
+  {
+    opacity: 0,
+    duration: 0.2,
+  },
+  0.3
+);
 
 var fifth = gsap.timeline({
   scrollTrigger: {
@@ -240,7 +249,7 @@ fifth.to(
     opacity: 0,
     duration: 0.2,
   },
-  0.5
+  0.3
 );
 
 var sixth = gsap.timeline({

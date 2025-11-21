@@ -1,8 +1,7 @@
 #fifth {
-  pointer-events: none;
   position: relative;
-  margin-top: -4000px;
-  height: 1300px;
+  margin-top: -240%;
+  height: 1400px;
 }
 
 #fifth-panel {
@@ -14,7 +13,5 @@
 @media all and (min-width: 1600px) {
   #fifth img {
     width: 1050px;
-    opacity: 0;
-    transform: translateY(200px);
   }
 }
