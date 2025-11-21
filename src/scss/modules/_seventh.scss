@@ -1,4 +1,5 @@
 #seventh {
+  pointer-events: none;
   height: 3000px;
   margin-top: -4000px;
 }
@@ -10,4 +11,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 1150px;
+}
+
+@media all and (min-width: 1600px) {
+  #seventh img {
+    width: 1250px;
+  }
 }

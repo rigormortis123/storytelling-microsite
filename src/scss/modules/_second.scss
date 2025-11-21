@@ -1,11 +1,20 @@
+#second {
+  pointer-events: none;
+  height: 1400px;
+  margin-top: -1700px;
+  position: relative;
+}
+
 #second img {
   width: 950px;
   opacity: 0;
   transform: translateY(200px);
 }
 
-#second {
-  height: 1400px;
-  margin-top: -1700px;
-  position: relative;
+@media all and (min-width: 1600px) {
+  #second img {
+    width: 1050px;
+    opacity: 0;
+    transform: translateY(200px);
+  }
 }

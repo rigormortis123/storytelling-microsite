@@ -2,9 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Château De Sable :P</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+
+    <title>Château De Sable :P</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Si ça se trouve, le château de sable sera encore là demain."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://marta-coelho.at-eikon.ch/storytelling-microsite/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Château De Sable" />
+    <meta
+      property="og:description"
+      content="Si ça se trouve, le château de sable sera encore là demain."
+    />
+    <meta
+      property="og:image"
+      content="https://file.garden/Z_jA1tzZaWwUuqrW/eikon/meta-thumbnail.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="marta-coelho.at-eikon.ch" />
+    <meta
+      property="twitter:url"
+      content="https://marta-coelho.at-eikon.ch/storytelling-microsite/"
+    />
+    <meta name="twitter:title" content="Château De Sable" />
+    <meta
+      name="twitter:description"
+      content="Si ça se trouve, le château de
+    sable sera encore là demain."
+    />
+    <meta
+      name="twitter:image"
+      content="https://file.garden/Z_jA1tzZaWwUuqrW/eikon/meta-thumbnail.jpg"
+    />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   </head>
   <body>
     <section class="l-wrapper">
@@ -17,8 +59,8 @@
           </div>
           <div id="first-foreground-cover"></div>
           <div class="l-speech-overlay">
-            <img id="first-bubble-one" src="./img/02.1.png" />
-            <img id="first-bubble-two" src="./img/02.2.png" />
+            <img id="first-bubble-one" src="./img/02.1.png?as=webp" />
+            <img id="first-bubble-two" src="./img/02.2.png?as=webp" />
           </div>
         </section>
 
@@ -70,8 +112,17 @@
 
       <footer>
         <div class="footer-wrapper">
+          <div class="footer-video-popup">
+            <video controls>
+              <source
+                src="./img/25_26_IMD32_SD2_animatique_Marta.mp4"
+                type="video/mp4"
+              />
+              />
+            </video>
+          </div>
+
           <article class="l-center">
-            <div class="footer-blend"></div>
             <img src="./img/couverture.png?as=webp" />
             <div class="footer-text">
               <p>
@@ -91,7 +142,9 @@
                 <button class="button light-bg">
                   Acheter la BD sur fnac.ch
                 </button>
-                <button class="button dark-bg">Regarder le trailer</button>
+                <button id="video-button" class="button dark-bg">
+                  Regarder le trailer
+                </button>
               </div>
             </div>
           </article>

@@ -2,6 +2,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
+var video = document.querySelector(".footer-video-popup video");
+var videoButton = document.querySelector("#video-button");
+var videoBg = document.querySelector(".footer-video-popup");
+
+videoButton.addEventListener("click", function () {
+  video.classList.toggle("is-active");
+  video.classList.toggle("is-active");
+});
+
 var first = gsap.timeline({
   scrollTrigger: {
     trigger: "#first",

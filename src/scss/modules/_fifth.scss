@@ -1,4 +1,5 @@
 #fifth {
+  pointer-events: none;
   position: relative;
   margin-top: -4000px;
   height: 1300px;
@@ -8,4 +9,12 @@
   transform: translateY(200px);
   opacity: 0;
   width: 950px;
+}
+
+@media all and (min-width: 1600px) {
+  #fifth img {
+    width: 1050px;
+    opacity: 0;
+    transform: translateY(200px);
+  }
 }

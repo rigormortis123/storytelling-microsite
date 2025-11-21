@@ -4,7 +4,7 @@
   border-radius: 7px;
   width: 500px;
   font-size: 20px;
-  font-family: "sf rounded", sans-serif;
+  font-family: "sf rounded", "Segoe UI", sans-serif;
 }
 
 .button.light-bg {
@@ -22,9 +22,4 @@
 .button.dark-bg:hover {
   color: black;
   background-color: white;
-}
-
-.button.dark-bg:hover,
-.button.light-bg:hover {
-  cursor: pointer;
 }

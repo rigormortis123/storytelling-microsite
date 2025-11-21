@@ -1,5 +1,6 @@
 #sixth {
   z-index: 1;
+  pointer-events: none;
   height: 3000px;
   margin-top: -1000px;
 }
@@ -22,9 +23,24 @@
 }
 
 #sixth-bubble {
+  z-index: 1;
   opacity: 0;
   top: 380;
   right: 380;
   position: fixed;
   width: 430px;
+}
+
+@media all and (min-width: 1600px) {
+  #sixth-left {
+    width: 660px;
+  }
+
+  #sixth-right {
+    width: 370px;
+  }
+
+  #sixth-bubble {
+    width: 530px;
+  }
 }

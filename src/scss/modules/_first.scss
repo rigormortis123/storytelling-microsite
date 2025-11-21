@@ -1,4 +1,5 @@
 #first {
+  pointer-events: none;
   height: 1600px;
   background: linear-gradient(
     180deg,
@@ -36,4 +37,14 @@
 #first-bubble-two {
   width: 320px;
   z-index: 1;
+}
+
+@media all and (min-width: 1600px) {
+  #first-bubble-one {
+    width: 400px;
+  }
+
+  #first-bubble-two {
+    width: 420px;
+  }
 }

@@ -1,13 +1,16 @@
 .l-wrapper {
+  pointer-events: none;
   overflow: hidden;
 }
 
 .l-paralax {
+  pointer-events: none;
   position: relative;
   height: 100vh;
 }
 
 .l-speech-overlay {
+  pointer-events: none;
   z-index: 1;
   position: fixed;
   display: flex;
@@ -19,11 +22,12 @@
 }
 
 .l-speech-overlay img {
+  pointer-events: none;
   opacity: 0;
-  height: fit-content;
 }
 
 .l-center {
+  pointer-events: none;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,13 +35,15 @@
 }
 
 .l-black-bg {
+  pointer-events: none;
   background-color: black;
 }
 
 .l-white-bg {
+  pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 600px,
-    rgba(255, 255, 255, 1) 600px
+    rgba(0, 0, 0, 1) 650px,
+    rgba(255, 255, 255, 1) 650px
   );
 }

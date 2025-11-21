@@ -15,7 +15,7 @@ video {
 }
 
 h1 {
-  font-family: "reload alt";
+  font-family: "reload alt", sans-serif;
   position: absolute;
   width: 100%;
   margin-top: 80px;
@@ -25,9 +25,13 @@ h1 {
 }
 
 p {
-  font-family: "sf pro text", "segoe", sans-serif;
+  font-family: "sf pro text", "Segoe UI", sans-serif;
   font-size: 20px;
-  line-height: 119%;
+  line-height: 125%;
+}
+
+.pin-spacer {
+  pointer-events: none;
 }
 
 @media all and (min-width: 1600px) {
