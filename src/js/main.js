@@ -208,7 +208,7 @@ third.to(
 var fourth = gsap.timeline({
   scrollTrigger: {
     trigger: "#fourth",
-    markers: true,
+    markers: false,
     pin: true,
     scrub: 2,
   },
