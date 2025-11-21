@@ -1,11 +1,11 @@
-#cursor {
+.cursor {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   transition: top 300ms, left 300ms;
   transition-timing-function: ease-out;
 }
 
-#cursor-bg {
+.cursor-bg {
   animation: 3s linear infinite rotate;
   transform-origin: 64px 64px;
 }

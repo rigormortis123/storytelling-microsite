@@ -6,30 +6,3 @@
   font-style: normal;
   font-display: fallback;
 }
-
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("../fonts/SFProText-Regular.woff2") format("woff2"),
-    url("../fonts/SFProText-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "SF Rounded";
-  src: url("../fonts/SFRounded-Medium.woff2") format("woff2"),
-    url("../fonts/SFRounded-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "SF Rounded";
-  src: url("../fonts/SFRounded-Semibold.woff2") format("woff2"),
-    url("../fonts/SFRounded-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: fallback;
-}
