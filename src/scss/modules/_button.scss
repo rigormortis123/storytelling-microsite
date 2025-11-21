@@ -1,10 +1,16 @@
 .button {
+  pointer-events: visible;
   padding: 17px;
   text-align: center;
   border-radius: 7px;
   width: 500px;
   font-size: 20px;
   font-family: "sf rounded", "Segoe UI", sans-serif;
+  transition: transform ease-out 300ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .button.light-bg {

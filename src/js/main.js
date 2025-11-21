@@ -9,8 +9,13 @@ var videoButton = document.querySelector("#video-button");
 var videoBg = document.querySelector(".footer-video-popup");
 
 videoButton.addEventListener("click", function () {
-  video.classList.toggle("is-active");
-  video.classList.toggle("is-active");
+  videoBg.classList.add("is-active");
+  video.classList.add("is-active");
+});
+
+videoBg.addEventListener("click", function () {
+  videoBg.classList.remove("is-active");
+  video.classList.remove("is-active");
 });
 
 // CURSEUR
@@ -387,9 +392,4 @@ var footer = gsap.timeline({
 
 footer.to(".footer-wrapper", {
   y: 0,
-  duration: 0.2,
-});
-
-footer.to("body", {
-  //   cursor: "auto",
 });
