@@ -34,6 +34,17 @@ p {
   pointer-events: none;
 }
 
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/cursor-scroll.svg");
+  background-color: red;
+  pointer-events: none; /* Ensure the custom cursor doesn't interfere with content */
+}
+
 @media all and (min-width: 1600px) {
   h1 {
     font-size: 172px;

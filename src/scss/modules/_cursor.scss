@@ -1,0 +1,21 @@
+#cursor {
+  z-index: 1;
+  position: absolute;
+  transition: top 300ms, left 300ms;
+  transition-timing-function: ease-out;
+}
+
+#cursor-bg {
+  animation: 3s linear infinite rotate;
+  transform-origin: 64px 64px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

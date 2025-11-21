@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
+// VIDEO
+
 var video = document.querySelector(".footer-video-popup video");
 var videoButton = document.querySelector("#video-button");
 var videoBg = document.querySelector(".footer-video-popup");
@@ -10,6 +12,17 @@ videoButton.addEventListener("click", function () {
   video.classList.toggle("is-active");
   video.classList.toggle("is-active");
 });
+
+// CURSEUR
+
+const cursor = document.querySelector("#cursor");
+
+window.addEventListener("mousemove", (event) => {
+  cursor.style.top = event.clientY / 16 - 45 / 16 + "rem";
+  cursor.style.left = event.clientX / 16 - 45 / 16 + "rem";
+});
+
+// GSAP
 
 var first = gsap.timeline({
   scrollTrigger: {
@@ -23,6 +36,15 @@ var first = gsap.timeline({
 first.to("#first-foreground", {
   y: -1200,
 });
+
+first.to(
+  "#cursor",
+  {
+    opacity: 0,
+    duration: 0.1,
+  },
+  0.03
+);
 
 first.to(
   "#first-foreground-cover",
@@ -366,4 +388,8 @@ var footer = gsap.timeline({
 footer.to(".footer-wrapper", {
   y: 0,
   duration: 0.2,
+});
+
+footer.to("body", {
+  //   cursor: "auto",
 });
